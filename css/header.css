@@ -1,0 +1,35 @@
+header {
+	width: 1263px;
+	height: 54px;
+	background: #000;
+}
+
+.header_left ul {
+	margin-left: 20px;
+}
+
+.header_left ul li {
+	float: left;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.left_li {
+	border-left: 1px solid;
+	color: white;
+}
+
+.header_right ul {
+	margin-right: 40px;
+}
+
+.header_right ul li {
+	float: right;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.right_li {
+	border-right: 1px solid;
+	color: white;
+}

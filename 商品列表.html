@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品列表</title>
+		<link href="css/share.css" rel="stylesheet" type="text/css" />
+		<link href="css/header.css" rel="stylesheet" type="text/css" />
+		<link href="css/nav.css" rel="stylesheet" type="text/css" />
+		<link href="css/footer.css" rel="stylesheet" type="text/css"  />
+		<script type="text/javascript" src="js/Cart/cookie.js"></script>
+		<style>
+			.container { width: 1263px; height: 1200px; background: #1b384d; }
+			.containerh { width: 1263px; text-align: center; padding: 30px 0; color: white; }
+			.mycart { border-radius: 10px; margin: 0 0 20px 80px; width: 120px; height: 30px; background: #f00; color: white; text-align: center; line-height: 30px; }
+			.list { margin-left: 65px; width: 1263px; float: left; }
+			.list dl dt img{width: 350px;}
+			.list dl { display: inline-block; width: 350px; margin: 0 30px 30px 0; overflow: hidden; }
+			.list dl dd { margin: 10px 0 10px 125px; color: white; }
+			.list dl dd button { width: 80px; height: 30px; border-radius: 5px; margin-left:-7px ;}
+		</style>
+	</head>
+	<body>
+		<!-- header-->
+		<header>
+			<div class="fbox">
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="#">帮助</a>
+						</li>
+						<!--<li class="left_li">
+									<a href="###">客服</a>
+								</li>-->
+						<li class="left_li">
+							<a href="cart.html" target="_self">查询订单</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="登录.html"target="_self">登录</a>
+						</li>
+						<li class="right_li">邮箱:
+							<a href="903073924@qq.com">903073924@qq.com</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--nav-->
+		<div class="nav">
+			<h1><img src="images/img/tim.jpg" width="200px" height="40px"/></h1>
+			<ul>
+				<li>
+					<a href="项目.html" target="_self">主页</a>
+				</li>
+				<li>
+					<a href="#">商店</a>
+					<ul class="subnav">
+						<li>
+							<a href="商品列表.html" target="_self">商品</a>
+
+						</li>
+						<li>
+							<a href="###">体验</a>
+						</li>
+						<li>
+							<a href="###">休闲</a>
+						</li>
+						<li>
+							<a href="###">体育</a>
+						</li>
+						<li>
+							<a href="###">冒险</a>
+						</li>
+						<li>
+							<a href="###">动作</a>
+						</li>
+						<li>
+							<a href="###">多人</a>
+						</li>
+						<li>
+							<a href="###">模拟</a>
+						</li>
+						<li>
+							<a href="###">独立</a>
+						</li>
+						<li>
+							<a href="###">竞速</a>
+						</li>
+						<li>
+							<a href="###">策略</a>
+						</li>
+						<li>
+							<a href="###">角色</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="关于.html" target="_search">关于</a>
+					<!--<ul class="subnav">
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+        </ul>-->
+				</li>
+				<li>
+					<li><a href="排行榜.html"target="_blank">排行榜</a></li>
+				</li>
+				<li>
+					<li><a href="恐怖.html">黑色星期五</a></li>
+				</li>
+			</ul>
+			<div class="Cart">
+				<div id="sech-box">
+					<input type="text" placeholder="搜索商店" class="sub-sech" style="border-radius:5px;width:170px;height: 25px;background: #316282;border: none;">
+					<input type="button" value="搜索" class="sub-ss" style="background: #316282;color:#9B9B9B;border: none;border-radius:5px;width: 30px;height: 30px;" width="100" height="30"><br />
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="containerh">
+				<h1>商品列表</h1></div>
+			<div class="mycart">
+				<a href="cart.html" style="color: white;">我的购物车</a><i id="ccount">0</i>
+			</div>
+			<div class="list">
+				<dl pid="1001">
+					<dt>
+                        <img src="images/g010.jpg" />
+                    </dt>
+					<dd>生化危机</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>998</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+				<dl pid="1002">
+					<dt>
+                        <img src="images/g020.jpg" />
+                    </dt>
+					<dd>求生之路</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>1998</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+				<dl pid="1003">
+					<dt>
+                        <img src="images/g030.jpg" />
+                    </dt>
+					<dd>NBA2K17</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>998</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+				<dl pid="1004">
+					<dt>
+                        <img src="images/g040.jpg" />
+                    </dt>
+					<dd>孤岛求生4</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>2000</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+				<dl pid="1005">
+					<dt>
+                        <img src="images/g050.jpg" />
+                    </dt>
+					<dd>GTA 5</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>2000</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+				<dl pid="1005">
+					<dt>
+                        <img src="images/g060.jpg" />
+                    </dt>
+					<dd>使命召唤 12</dd>
+					<dd style="margin-left: 32px;">是一款剧情设定在现代城市的恐怖生存游戏并从中杀出一条血路。</dd>
+					<dd>￥<span>2000</span></dd>
+					<dd>
+						<button>添加购物车</button>
+					</dd>
+				</dl>
+
+			</div>
+		</div>
+		<!-- footer-->
+			<div id="footer">
+			<div class="footer-logo"><img src="images/img/timg.jpg"/></div>
+		    <div class="footer-p"><span>©2017 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+所有的价格均已包含增值税（如适用）。</span>&nbsp;&nbsp;&nbsp;<span class="footer-span"><a href="###">隐藏政策</a></span><span class="footer-span"><a href="###">法律信息</a></span>
+            <span class="footer-span"><a href="###">blackrapid用户协议</a></span>
+            <span class="footer-lastspan"><a href="###">退款</a></span>
+		    </div>
+		    <div class="footer-end">
+			    <span class="footer-span"><a href="###">关于Valve</a></span><span class="footer-span"><a href="###">法律信息</a></span>
+	            <span class="footer-span"><a href="###">Blackrapid works</a></span>
+	            <span class="footer-span"><a href="###">工作</a></span>
+	            <span class="footer-span"><a href="###">礼物卡</a></span>
+	            <span class="footer-lastspan"><a href="###">Blackrapid 分销</a></span>
+		    </div>
+		</div>
+		<script src="js/Cart/server.js"></script>
+		<script src="js/Cart/index.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,274 @@
+html,
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url("../images/images.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font: 14px/25px Arial, Helvetica, sans-serif;
+}
+
+body .wrap-body {}
+
+blockquote {
+	padding-left: 10px
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+code {
+	font-size: 1em;
+}
+article {
+	margin-bottom: 30px;
+	background: #ffffff;
+}
+
+article:after,
+article:before {
+	clear: both;
+	content: '\0020';
+	display: block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+article h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+article .title a {
+	font-size: 30px;
+	line-height: 43px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #323A41;
+}
+
+article .title a:hover {
+	text-decoration: underline;
+}
+
+.bg-yellow {
+	background: #F7A541;
+}
+
+.bg-red {
+	background: #CF4647;
+}
+
+.bg-blue {
+	background: #00B4CC;
+}
+
+.bg-green {
+	background: #3FB8AF;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+html,
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url("../images/images.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font: 14px/25px Arial, Helvetica, sans-serif;
+}
+
+body .wrap-body {}
+
+blockquote {
+	padding-left: 10px
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+code {
+	font-size: 1em;
+}
+
+article .info {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+article .info a {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+article .info a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+article .info a img {
+	width: 20px;
+	margin-right: 10px;
+}
+article .info ul {
+	width: 100%;
+	padding: 0px;
+	list-style-type: none;
+}
+
+article .info li {
+	width: auto;
+	border-bottom: 1px dotted #e8e8e8;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.zerogrid { width: 1200px; position: relative; margin: 0 auto; padding: 0px; }  .zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }  .zerogrid .f-right { float: right!important; }  .zerogrid .f-left { float: left!important; }  .zerogrid .row {}  .zerogrid .row:before, .row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }  .zerogrid .row:after { clear: both; }  .zerogrid .row { zoom: 1; }  .zerogrid .wrap-col { margin: 10px; }  .zerogrid .col-1-2,.zerogrid .col-1-3,.zerogrid .col-2-3,.zerogrid .col-1-4,.zerogrid .col-2-4,.zerogrid .col-3-4,.zerogrid .col-1-5,.zerogrid .col-2-5,.zerogrid .col-3-5,.zerogrid .col-4-5,.zerogrid .col-1-6,.zerogrid .col-2-6,.zerogrid .col-3-6,.zerogrid .col-4-6,.zerogrid .col-5-6 { float: left; display: inline-block; }  .zerogrid .col-full { width: 100%; }  .zerogrid .col-1-2 { width: 50%; }  .zerogrid .offset-1-2 { margin-left: 50%; }  .zerogrid .col-1-3 { width: 33.33%; }  .zerogrid .col-2-3 { width: 66.66%; }  .contact .address {}  .contact .phone {}  .contact .mail {}   .zerogrid .offset-1-3 { margin-left: 33.33%; }  .zerogrid .offset-2-3 { margin-left: 66.66%; }  .zerogrid .col-1-4 { width: 25%; }  .zerogrid .col-2-4 { width: 50%; }  .zerogrid .col-3-4 { width: 75%; }  .zerogrid .offset-1-4 { margin-left: 25%; }  .zerogrid .offset-2-4 { margin-left: 50%; }  .zerogrid .offset-3-4 { margin-left: 75%; }  .zerogrid .col-1-5 { width: 20%; }  .zerogrid .col-2-5 { width: 40%; }  .zerogrid .col-3-5 { width: 60%; }  .zerogrid .col-4-5 { width: 80%; } #container {}  #container .wrap-container {}  #main-content {}  #main-content .wrap-content {}  #sidebar {}  #sidebar .wrap-slidebar {}  #search {}  .left{float: left!important;} .right{float: right!important;} .zerogrid .offset-1-5 { margin-left: 20%; }  .zerogrid .offset-2-5 { margin-left: 40%; }  .zerogrid .offset-3-5 { margin-left: 60%; }  .zerogrid .offset-4-5 { margin-left: 80%; }  .zerogrid .col-1-6 { width: 16.66%; }  .zerogrid .col-2-6 { width: 33.33%; }  .zerogrid .col-3-6 { width: 50%; }  .zerogrid .col-4-6 { width: 66.66%; }  .zerogrid .col-5-6 { width: 83.33%; }  .zerogrid .offset-1-6 { margin-left: 16.66%; }  .zerogrid .offset-2-6 { margin-left: 33.33%; }  .zerogrid .offset-3-6 { margin-left: 50%; }  .zerogrid .offset-4-6 { margin-left: 66.66%; }  .zerogrid .offset-5-6 { margin-left: 83.33%; }
+article .info ul li.avatar {
+	border: none;
+}
+
+article .info ul li.last {
+	border: none;
+}
+
+article .info-single {
+	color: #ffffff;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+article .info-single a {
+	color: #ffffff;
+}
+
+article .info-single a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+article .info-single a img {
+	width: 20px;
+	margin-right: 10px;
+}
+
+article .info-single ul {
+	list-style: none;
+	margin: 20px;
+	display: inline-block;
+}
+
+article .info-single ul li {
+	float: left;
+	padding: 0 10px;
+	border-right: 1px dotted #ffffff;
+}
+
+article .info-single ul li.avatar {
+	border: none;
+}
+
+article .info-single ul li.last {
+	border: none;
+}
+
+article .main-post {
+	padding: 10px;
+}
+
+article .art-header {}
+
+article .art-header img {
+	width: 100%;
+}
+
+article .art-content {}
+
+article .art-content blockquote p {
+	border-left: 3px solid #1c7791;
+	font-size: 120%;
+	margin: 0 50px;
+	font-style: italic;
+	color: #777;
+}
+
+article .art-content p {
+	font-size: 15px;
+	text-align: justify;
+	color: #6E757C;
+	line-height: 1.4em;
+	margin: 0 auto;
+	padding: 18px;
+}
+
+article .art-content ol {
+	float: left;
+	text-align: justify;
+	margin: 10px 50px;
+	font-size: 16px;
+	list-style-type: circle;
+}
+
+article .art-content h3 {
+	font-size: 1.7em;
+	line-height: 2em;
+	padding: 0px 20px;
+}
+
+article .art-content .entry-meta,
+.entry-meta a {
+	color: #9ca6b0;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+article .art-content .entry-meta a:hover {
+	text-decoration: underline;
+}
+
+article .wrap-art-related {
+	background-color: #fff;
+	padding: 20px;
+}
+
+article .art-related {
+	margin-top: 30px;
+	text-align: center;
+}
+
+article .art-related img {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+article .art-related h4 {
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+article.single .wrap-art {
+	padding: 30px;
+}
+
+.contact p {
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+.wrap-body h1{color: white;font-size: 60px;margin: 50px 0 50px 500px;}

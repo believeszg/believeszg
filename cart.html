@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>购物车</title>
+       <link href="css/share.css" rel="stylesheet" type="text/css" />
+		<link href="css/header.css" rel="stylesheet" type="text/css" />
+		<link href="css/nav.css" rel="stylesheet" type="text/css" />
+		<link href="css/footer.css" rel="stylesheet" type="text/css"  />
+       <script type="text/javascript" src="js/Cart/cookie.js"></script>
+        <style>
+        	.container { width: 1263px; height: 1600px; background: #1b384d; }
+			.containerh { width: 1263px; text-align: center; padding: 30px 0; color: white; }
+			.container h3 {margin:0 0 30px 30px;}
+			.container table{margin-left: 30px;}
+			.container table tr{color: white;}
+			#h2{margin-left: 30px;}
+			.mycart { border-radius: 10px; margin: 0 0 20px 80px; width: 120px; height: 30px; background: #f00; color: white; text-align: center; line-height: 30px; }
+			.list { margin-left: 65px; width: 1263px; float: left; }
+			.list dl dt img{width: 350px;}
+			.list dl { display: inline-block; width: 350px; margin: 0 30px 30px 0; overflow: hidden; }
+			.list dl dd { margin: 10px 0 10px 125px; color: white; }
+			.list dl dd button { width: 80px; height: 30px; border-radius: 5px; margin-left:-7px ;}
+        </style>
+    </head>
+    <body>
+    	<!-- header-->
+		<header>
+			<div class="fbox">
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="#">帮助</a>
+						</li>
+						<!--<li class="left_li">
+									<a href="###">客服</a>
+								</li>-->
+						<li class="left_li">
+							<a href="cart.html" target="_self">查询订单</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="登录.html"target="_self">登录</a>
+						</li>
+						<li class="right_li">邮箱:
+							<a href="903073924@qq.com">903073924@qq.com</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--nav-->
+		<div class="nav">
+			<h1><img src="images/img/tim.jpg" width="200px" height="40px"/></h1>
+			<ul>
+				<li>
+					<a href="项目.html" target="_self">主页</a>
+				</li>
+				<li>
+					<a href="#">商店</a>
+					<ul class="subnav">
+						<li>
+							<a href="商品列表.html" target="_self">商品</a>
+
+						</li>
+						<li>
+							<a href="###">体验</a>
+						</li>
+						<li>
+							<a href="###">休闲</a>
+						</li>
+						<li>
+							<a href="###">体育</a>
+						</li>
+						<li>
+							<a href="###">冒险</a>
+						</li>
+						<li>
+							<a href="###">动作</a>
+						</li>
+						<li>
+							<a href="###">多人</a>
+						</li>
+						<li>
+							<a href="###">模拟</a>
+						</li>
+						<li>
+							<a href="###">独立</a>
+						</li>
+						<li>
+							<a href="###">竞速</a>
+						</li>
+						<li>
+							<a href="###">策略</a>
+						</li>
+						<li>
+							<a href="###">角色</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="关于.html" target="_search">关于</a>
+					<!--<ul class="subnav">
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+           <li><a href="#">导航</a></li>
+        </ul>-->
+				</li>
+				<li>
+					<li><a href="排行榜.html"target="_blank">排行榜</a></li>
+				</li>
+				<li>
+					<li><a href="恐怖.html">黑色星期五</a></li>
+				</li>
+			</ul>
+			<div class="Cart">
+				<div id="sech-box">
+					<input type="text" placeholder="搜索商店" class="sub-sech" style="border-radius:5px;width:170px;height: 25px;background: #316282;border: none;">
+					<input type="button" value="搜索" class="sub-ss" style="background: #316282;color:#9B9B9B;border: none;border-radius:5px;width: 30px;height: 30px;" width="100" height="30"><br />
+				</div>
+			</div>
+		</div>
+        <div class="container">
+           <div class="containerh">
+				<h1>购物车</h1></div>
+            <h3><a href="商品列表.html">返回商品列表页面</a></h3>
+            <table id="table" border="1" cellspacing="0" cellpadding="0" class="hide">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" id="allCheck" class="ck" />全选
+                        </th>
+                        <th> 图片 </th>
+                        <th> 描述 </th>
+                        <th> 数量 </th>
+                        <th> 单价 </th>
+                        <th> 小计 </th> 
+                        <th> 操作 </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+             
+                </tbody>
+            </table>
+            <div class="box" id="box" style="display: none;">购物车里没有任何商品</div>
+            <h2 id="h2" class="" style="color: white;">总价格：￥<span id="totalPrice">0</span></h2>
+        </div>
+        <!-- footer-->
+			<div id="footer">
+			<div class="footer-logo"><img src="images/img/timg.jpg"/></div>
+		    <div class="footer-p"><span>©2017 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+所有的价格均已包含增值税（如适用）。</span>&nbsp;&nbsp;&nbsp;<span class="footer-span"><a href="###">隐藏政策</a></span><span class="footer-span"><a href="###">法律信息</a></span>
+            <span class="footer-span"><a href="###">blackrapid用户协议</a></span>
+            <span class="footer-lastspan"><a href="###">退款</a></span>
+		    </div>
+		    <div class="footer-end">
+			    <span class="footer-span"><a href="###">关于Valve</a></span><span class="footer-span"><a href="###">法律信息</a></span>
+	            <span class="footer-span"><a href="###">Blackrapid works</a></span>
+	            <span class="footer-span"><a href="###">工作</a></span>
+	            <span class="footer-span"><a href="###">礼物卡</a></span>
+	            <span class="footer-lastspan"><a href="###">Blackrapid 分销</a></span>
+		    </div>
+		</div>
+        <script src="js/Cart/server.js" type="text/javascript"></script>
+        <script src="js/Cart/cart.js"></script>
+    </body>
+</html>
