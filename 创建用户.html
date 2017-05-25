@@ -260,4 +260,23 @@ You agree that you will not use IP proxying or other methods to disguise the pla
 	<div class="end"><a href="#"><img src="images/img/bj2.png" ></a></div>
 	</body>
 	<script type="text/javascript" src="js/enroll.js"></script>
+    <script type="text/javascript" >
+		
+		$(function(){
+			$("#subLogin").click(function(){
+				//1、
+				
+				$.post("156.php",
+						{
+							"txtUserName":$("#txtUserName").val(),
+							"txtUserPass":$("#txtUserPass").val()
+						},
+						function(data){
+							alert(data);
+							//alert("注册成功！");			
+						}
+				)
+			});
+		});
+	</script>
 </html>

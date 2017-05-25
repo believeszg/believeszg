@@ -1,5 +1,4 @@
-
-	$(".container").bind("mouseenter mouseleave",function(e) {
+$(".container").bind("mouseenter mouseleave",function(e) {
            var w = $(this).width();
            var h = $(this).height();
            var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);

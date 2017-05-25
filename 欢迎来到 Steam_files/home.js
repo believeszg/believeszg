@@ -241,6 +241,11 @@ GHomepage = {
 
 		GHomepage.oDisplayLists.popular_new_on_steam = GHomepage.oDisplayLists.popular_new || [];
 
+		// CURATORS ( Must be initialized before the main cluster)
+		try {
+			GSteamCurators.Init( GHomepage.rgTopSteamCurators, GHomepage.rgCuratedAppsData );
+		} catch( e ) { OnHomepageException(e); }
+
 
 		// MAIN CLUSTER
 		try {
@@ -273,14 +278,6 @@ GHomepage = {
 		try {
 			GHomepage.RenderFriendsRecentlyPurchased();
 		} catch( e ) { OnHomepageException(e); }
-
-		// CURATORS
-		try {
-
-			GSteamCurators.Init( GHomepage.rgTopSteamCurators, GHomepage.rgCuratedAppsData );
-		} catch( e ) { OnHomepageException(e); }
-
-
 
 		// Sidebar
 		// Recommended tags
@@ -374,6 +371,8 @@ GHomepage = {
 	RenderMainClusterV2: function()
 	{
 		var rgDisplayListCombined = false;
+		GDynamicStore.s_rgDisplayedApps = [];
+
 		if ( g_AccountID == 0 )
 		{
 			rgDisplayListCombined = GHomepage.ZipLists(
@@ -621,8 +620,8 @@ GHomepage = {
 			rgRecommendationReasons.recommended_by_curator = false;
 			var curator = GStoreItemData.GetAccountData( null, reason.rgCurators[0], 7 );
 
-			var $ReasonMain = $J('<div/>').addClass('main').addClass('curator').html( "\u7531\u9274\u8d4f\u5bb6<strong>\u63a8\u8350<\/strong><br><span>%1$s<\/span>".replace("%1$s", curator.name ) );
-			var $ReasonAvatar = $J('<div>').addClass('avatar').append($J('<img>').attr('src', GetAvatarURL( curator.avatar, '_medium' ) ) );
+			var $ReasonMain = $J('<div/>').addClass('main').addClass('curator').html( "\u7531\u9274\u8d4f\u5bb6<strong>\u63a8\u8350<\/strong><br><span>%1$s<\/span>".replace("%1$s", V_EscapeHTML( curator.name ) ) );
+			var $ReasonAvatar = $J('<div>').addClass('avatar').append($J('<img>').attr('src', GetAvatarURL( curator.avatar != '0000000000000000000000000000000000000000' ? curator.avatar : "fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb", '_medium' ) ) );
 
 			$RecommendedReason.append( $ReasonAvatar );
 			$RecommendedReason.append( $ReasonMain );
@@ -1777,7 +1776,7 @@ GSteamCurators = {
 			if ( curatorsCache.hasOwnProperty( clanID ) )
 			{
 				var curator = curatorsCache[clanID];
-				var $Curator =  $J('<div/>', {'class': 'steam_curator_for_app tooltip', 'onclick': "top.location.href='" + curator.link + "'", "data-tooltip-content": curator.name } );
+				var $Curator =  $J('<div/>', {'class': 'steam_curator_for_app tooltip', 'onclick': "top.location.href='" + curator.link + "'", "data-tooltip-content": V_EscapeHTML( curator.name ) } );
 				var $CuratorImg = $J('<img/>', {'class': 'steam_curator_for_app_img', 'src': GetAvatarURL( curator.strAvatarHash, '' ) });
 				$Curator.append( $CuratorImg );
 				$Curator.v_tooltip();
@@ -1832,7 +1831,7 @@ GSteamCurators = {
 			if ( curatorsCache.hasOwnProperty( clanID ) )
 			{
 				var curator = curatorsCache[clanID];
-				var $Curator =  $J('<a/>', {'class': 'steam_curator_for_app tooltip', 'href': curator.link, "data-tooltip-content": curator.name } );
+				var $Curator =  $J('<a/>', {'class': 'steam_curator_for_app tooltip', 'href': curator.link, "data-tooltip-content": V_EscapeHTML( curator.name ) } );
 				var $CuratorImg = $J('<img/>', {'class': 'steam_curator_for_app_img', 'src': GetAvatarURL( curator.strAvatarHash, '' ) });
 				$Curator.append( $CuratorImg );
 				$Curator.v_tooltip();
@@ -1903,7 +1902,7 @@ GSteamCurators = {
 
 
 		// Add the image
-		var $Curator =  $J('<a/>', {'class': 'tooltip', 'href': curator.link, "data-tooltip-content": curator.name } );
+		var $Curator =  $J('<a/>', {'class': 'tooltip', 'href': curator.link, "data-tooltip-content": V_EscapeHTML( curator.name ) } );
 		var $CuratorImg = $J('<img/>', {'class': '', 'src': GetAvatarURL( curator.strAvatarHash, '_full' ) });
 		$Curator.append( $CuratorImg );
 		$Curator.v_tooltip();

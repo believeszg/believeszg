@@ -1,0 +1,128 @@
+
+body .csgo .page_header_ctn
+{
+	margin: 2em;
+	background: none;
+}
+
+body .csgo .page_content
+{
+	width: 600px;
+}
+
+.button:hover
+{
+	background-position:bottom;
+}
+
+#AccountLinkButtonPW
+{
+	display:block;
+	width:261px;
+	height:77px;
+	background-image:url('https://steamstore-a.akamaihd.net/public/shared/images/accountlink/accountlink_pw_btn_en.jpg');
+}
+
+.lang_schinese #AccountLinkButtonPW
+{
+	background-image:url('https://steamstore-a.akamaihd.net/public/shared/images/accountlink/accountlink_pw_btn_zh.jpg');
+}
+
+.accountlink_csgo
+{
+	width: 940px;
+	margin: auto;
+	padding: 40px;
+	line-height: 20px;
+}
+
+p .csgoheadline{
+	font-size 32px;
+}
+
+.csgo .btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba( 103, 193, 245, 0.2 );
+}
+
+.csgo .btn_medium > span, input.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.csgo .btnv6_blue_hoverfade > span {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+}
+
+/*these styles are in login.css - hoping that by placing them here they will magically overide for the cs:go account creation/linking pages*/
+
+
+.csgo blockbg {
+    height: 30px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.csgo .game_name {
+    position: relative;
+    width: 616px;
+    padding-bottom: 16px;
+    font-size: 30px;
+    color: #d6d7d8;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.csgo .join_form {
+    padding: 20px 16px;
+    position: relative;
+    background-color: #0e141c;
+    border-color: #202d48; // this is the addition
+
+}
+
+.csgo .join_form input[type="text"], .join_form input[type="password"] {
+    height: 18px;
+    background-color: #0e141c;
+    border-color: #202d48;
+}
+
+.csgo .ssa_box {
+    height: 337px;
+    overflow: auto;
+    border: 1px solid #4d4b49;
+    padding: 9px;
+    line-height: 15px;
+    background-color: #0e141c;
+    border-color: #202d48;
+}
+
+/* this block is found in in store.css */
+
+.csgo div.leftcol {
+    width: 616px;
+    margin: 0 auto;
+}
+
+/* this block is from buttons.css */
+
+.csgo .btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    background: rgba( 49, 126, 168, 0.9 );
+    text-transform: uppercase;
+}
